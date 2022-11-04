@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # GoogleModelViewer-Allin
 
 pour Ne pas avoir l'erreur suivante :
@@ -20,3 +21,7 @@ https://firebase.google.com/docs/storage/web/download-files
    }
    ]
 3. Run gsutil cors set cors.json gs://<your-cloud-storage-bucket> to deploy these restrictions.
+=======
+# JimmyWebAr
+Test for webAr
+>>>>>>> b4f75b654d154b6f403f2f62d07400e2fd435fce
