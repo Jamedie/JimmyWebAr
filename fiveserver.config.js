@@ -1,10 +1,11 @@
 // fiveserver.config.js
+
 module.exports = {
-    host: '0.0.0.0', // default: '0.0.0.0' (could also be 'localhost' for example)
-    remoteLogs: 'magenta', // true | false | Color
-    useLocalIp: true, // optional: opens browser with your local IP
-      /** Use the /.cache/URL route to cache resources in memory. */
-  cache: false,
-    /** Enable CORS. (default: true) */
-    cors: true,
-  }
+  highlight: true, // enable highlight feature
+  injectBody: true, // enable instant update
+  remoteLogs: true, // enable remoteLogs
+  remoteLogs: "yellow", // enable remoteLogs and use the color yellow
+  injectCss: false, // disable injecting css
+  navigate: true, // enable auto-navigation  
+  debugVSCode: true,
+};
