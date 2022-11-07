@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Fri Nov 04 2022 14:55:05 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Mon Nov 07 2022 13:11:18 GMT+0000 (Coordinated Universal Time)  -->
 <html
   data-wf-page="6364e8648f1d89105e854eee"
   data-wf-site="6364e8648f1d89404b854eda"
 >
   <head>
+    <!-- Load Model Viewer -->
     <script
       type="module"
       src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
     ></script>
+    <!-- Import Wonder AR Button component -->
+    <script
+      type="module"
+      src="https://unpkg.com/@wonder-partners/ar-button"
+      title="Chevrolet Corvette ZR"
+    ></script>
+
     <meta charset="utf-8" />
     <title>Jimmy Web AR Test</title>
     <meta content="Jimmy Web AR Test" property="og:title" />
     <meta
-      content="images\logo-wonder.svg"
+      content="https://uploads-ssl.webflow.com/5c6eefaaeddf9248ac13bc72/5cdc90c195678d12d5f23f33_Store%20SEO.jpg"
       property="og:image"
     />
+    <meta content="Jimmy Web AR Test" property="twitter:title" />
     <meta
-      content="Store - Webflow HTML website template"
-      property="twitter:title"
-    />
-    <meta
-      content="images\logo-wonder.svg"
+      content="https://uploads-ssl.webflow.com/5c6eefaaeddf9248ac13bc72/5cdc90c195678d12d5f23f33_Store%20SEO.jpg"
       property="twitter:image"
     />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta content="Webflow" name="generator" />
-    <link href="css\jimmywebar.webflow.css" rel="stylesheet" type="text/css" />
-    <link href="css\normalize.css" rel="stylesheet" type="text/css" />
-    <link href="css\webflow.css" rel="stylesheet" type="text/css" />
+    <link href="css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="css/webflow.css" rel="stylesheet" type="text/css" />
+    <link href="css/jimmywebar.webflow.css" rel="stylesheet" type="text/css" />
     <script
       src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
       type="text/javascript"
@@ -54,10 +59,10 @@
             (n.className += t + "touch");
       })(window, document);
     </script>
-    <link href="images\favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    <link href="images\favicon.ico" rel="apple-touch-icon" />
+    <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="images/webclip.png" rel="apple-touch-icon" />
   </head>
-  <body>
+  <body background-color="rgb(0, 0, 0)" class="body">
     <div
       data-collapse="medium"
       data-animation="default"
@@ -65,35 +70,14 @@
       data-easing="ease"
       data-easing2="ease"
       role="banner"
-      class="navigation w-nav"
+      class="header w-nav"
     >
-      <div class="navigation-items">
-        <img
-          src="images\favicon.ico"
-          loading="lazy"
-          width="47"
-          alt=""
-        />
-        <div class="navigation-wrap">
-          <nav role="navigation" class="navigation-items w-nav-menu">
-            <a href="#" class="navigation-item w-nav-link">Products</a>
-            <a href="#" class="navigation-item w-nav-link">Contact</a>
-          </nav>
-          <div class="menu-button w-nav-button">
-            <img
-              src="images\menu-icon_1menu-icon.png"
-              width="22"
-              alt=""
-              class="menu-icon"
-            />
-          </div>
-        </div>
-      </div>
+      <img src="images\logo-wonder.svg" loading="lazy" width="47" alt="" />
+      <h1 class="heading">Jimmy<br />Web AR Test</h1>
     </div>
-    <div class="div-block-2">
+    <div class="bodycontainer">
       <div class="container">
         <div class="main-heading-wrap">
-          <h1 class="heading">Jimmy<br />Web AR Test</h1>
           <div class="paragraph-bigger cc-bigger-light">
             Un Site qui claque !<br />Seulement pour les Tests<br />
           </div>
@@ -106,22 +90,87 @@
           J&#x27;aime manger des pommes.<br />‍
         </p>
       </div>
-      <div class="ar-object">
+      <div class="googlemodelviewer">
+        <div>
+          <div class="experience-type-name">Google Model Viewer</div>
+        </div>
         <div class="arcontainer w-container">
-          <model-viewer src="https://firebasestorage.googleapis.com/v0/b/jimmy-webar.appspot.com/o/ChevroletCorvetteZR1.glb?alt=media"
-           ios-src="https://firebasestorage.googleapis.com/v0/b/jimmy-webar.appspot.com/o/ChevroletCorvetteZR1.usdz?alt=media" 
-           alt="Chevrolet Corvette ZR Lego" 
-           ar="" 
-           auto-rotate="" 
-           camera-controls="" 
-           ar-status="not-presenting">
+          <div class="addmodelviewerhere"></div>
+          <model-viewer
+            src="https://firebasestorage.googleapis.com/v0/b/jimmy-webar.appspot.com/o/ChevroletCorvetteZR1.glb?alt=media"
+            ios-src="https://firebasestorage.googleapis.com/v0/b/jimmy-webar.appspot.com/o/ChevroletCorvetteZR1.usdz?alt=media"
+            alt="Chevrolet Corvette ZR Lego"
+            ar=""
+            auto-rotate=""
+            camera-controls=""
+            ar-status="not-presenting"
+          >
           </model-viewer>
+        </div>
+        <div class="object-informations-container">
+          <div class="object-name">Chevrolet Corvette ZR</div>
+          <div class="description">Jouet Lego</div>
+          <div class="divider"></div>
+        </div>
+      </div>
+      <div class="wonderarbutton">
+        <div>
+          <div class="experience-type-name">Wonder AR Button + Iframe</div>
+        </div>
+        <div class="arcontainer w-container">
+          <div class="addmodelviewerhere"></div>
+          <div class="sketchfab-embed-wrapper">
+            <iframe
+              title="RockingChair"
+              frameborder="0"
+              allowfullscreen
+              mozallowfullscreen="true"
+              webkitallowfullscreen="true"
+              allow="autoplay; fullscreen; xr-spatial-tracking"
+              xr-spatial-tracking
+              execution-while-out-of-viewport
+              execution-while-not-rendered
+              web-share
+              src="https://sketchfab.com/models/c1142b8022494c66b63fd4c469a4bf90/embed"
+            >
+            </iframe>
           </div>
         </div>
-        <div class="div-block">
-          <div class="text-block">Chevrolet Corvette ZR</div>
-          <div class="text-block-2">Jouet Lego</div>
+        <div class="object-informations-container">
+          <!-- Default stylesheet (optional) -->
+          <link
+            rel="stylesheet"
+            href="https://unpkg.com/@wonder-partners/ar-button/styles.css"
+          />
+
+          <!-- Use it like any other HTML element -->
+          <ar-button
+            src="https://firebasestorage.googleapis.com/v0/b/jimmy-webar.appspot.com/o/RockingChair.glb?alt=media"
+            ios-src="https://firebasestorage.googleapis.com/v0/b/jimmy-webar.appspot.com/o/RockingChair.usdz?alt=media"
+            title="Rocking chair"
+            link="https://www.wonder-partners.com/"
+            checkout-title="Rocking chair"
+            checkout-subtitle="Furniture"
+            price="Pas cher"
+          >
+            View in your space
+          </ar-button>
+
+          <div class="object-name">Rocking chair</div>
+          <div class="description">Furniture</div>
           <div class="divider"></div>
+        </div>
+      </div>
+      <div class="ar-object-google-ar-button">
+        <div>
+          <div class="experience-type-name">Google AR Button</div>
+        </div>
+        <div class="arcontainer w-container">
+          <div class="addmodelviewerhere"></div>
+        </div>
+        <div class="object-informations-container">
+          <div class="object-name">Ninja</div>
+          <div class="description">Character</div>
           <div class="divider"></div>
         </div>
       </div>
@@ -136,4 +185,3 @@
     <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
   </body>
 </html>
-

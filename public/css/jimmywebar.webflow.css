@@ -22,6 +22,81 @@
   margin-right: 20px;
 }
 
+.w-commerce-commercecartapplepaybutton {
+  background-color: #000;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  color: #fff;
+  cursor: pointer;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin-bottom: 8px;
+  height: 38px;
+  min-height: 30px;
+}
+
+.w-commerce-commercecartapplepayicon {
+  width: 100%;
+  height: 50%;
+  min-height: 20px;
+}
+
+.w-commerce-commercecartquickcheckoutbutton {
+  background-color: #000;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  color: #fff;
+  cursor: pointer;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  height: 38px;
+}
+
 .w-commerce-commercequickcheckoutgoogleicon {
   display: block;
   margin-right: 8px;
@@ -65,7 +140,7 @@
   border-left-style: solid;
   border-left-width: 1px;
   border-left-color: #e6e6e6;
-  background-color: rgb(0, 0, 0);
+  background-color: #fff;
 }
 
 .w-commerce-commercecheckoutblockcontent {
@@ -82,7 +157,7 @@
   border-left-style: solid;
   border-left-width: 1px;
   border-left-color: #e6e6e6;
-  background-color: rgb(0, 0, 0);
+  background-color: #fff;
 }
 
 .w-commerce-commercecheckoutorderitemslist {
@@ -153,17 +228,17 @@
   padding-left: 20px;
   border-top-style: solid;
   border-top-width: 1px;
-  border-top-color: #000000;
+  border-top-color: #e6e6e6;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  border-bottom-color: #000000;
+  border-bottom-color: #e6e6e6;
   border-right-style: solid;
   border-right-width: 1px;
   border-right-color: #e6e6e6;
   border-left-style: solid;
   border-left-width: 1px;
   border-left-color: #e6e6e6;
-  background-color: #000000;
+  background-color: #fff;
 }
 
 .w-commerce-commercecheckoutlabel {
@@ -2101,6 +2176,7 @@ figcaption {
 
 .paragraph-bigger.cc-bigger-light {
   opacity: 0.6;
+  color: #fff;
   text-align: center;
 }
 
@@ -2204,6 +2280,7 @@ figcaption {
 
 .paragraph-light {
   opacity: 0.6;
+  color: #fff;
   font-size: 14px;
   line-height: 26px;
   text-align: center;
@@ -2369,7 +2446,7 @@ figcaption {
   margin-left: 20px;
 }
 
-.navigation {
+.header {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2379,7 +2456,7 @@ figcaption {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #000000;
+  background-color: transparent;
 }
 
 .text-field {
@@ -3409,7 +3486,7 @@ figcaption {
   grid-template-rows: auto auto;
 }
 
-.div-block {
+.object-informations-container {
   display: block;
   float: none;
   clear: none;
@@ -3422,13 +3499,19 @@ figcaption {
   object-fit: cover;
 }
 
-.text-block {
+.ar-object-google-ar-button {
+  margin-top: 40px;
+}
+
+.object-name {
   clear: both;
+  color: #fff;
   text-align: center;
 }
 
-.text-block-2 {
+.description {
   clear: both;
+  color: #fff;
   text-align: center;
 }
 
@@ -3457,6 +3540,13 @@ figcaption {
 }
 
 .heading {
+  clear: both;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  direction: ltr;
+  color: #fff;
   text-align: center;
 }
 
@@ -3473,6 +3563,27 @@ figcaption {
   -webkit-flex: 0 auto;
   -ms-flex: 0 auto;
   flex: 0 auto;
+}
+
+.experience-type-name {
+  color: #fff;
+  text-align: center;
+}
+
+.wonderarbutton {
+  margin-top: 40px;
+}
+
+.googlemodelviewer {
+  margin-top: 40px;
+}
+
+.body {
+  background-color: #2e2d2d;
+}
+
+.div-block-4 {
+  clear: both;
 }
 
 @media screen and (max-width: 991px) {
@@ -3516,7 +3627,7 @@ figcaption {
   }
 
   .navigation-items {
-    background-color: rgb(27, 27, 27);
+    background-color: #fff;
   }
 
   .cart {
@@ -3524,7 +3635,7 @@ figcaption {
     margin-left: 0px;
   }
 
-  .navigation {
+  .header {
     padding: 25px 30px;
   }
 
@@ -3543,11 +3654,11 @@ figcaption {
   }
 
   .navigation-item:hover {
-    background-color: #000000;
+    background-color: #f7f8f9;
   }
 
   .navigation-item:active {
-    background-color: #000000;
+    background-color: #eef0f3;
   }
 
   .menu-button {
@@ -3771,7 +3882,7 @@ figcaption {
     padding-left: 10px;
   }
 
-  .navigation {
+  .header {
     padding: 20px 30px;
   }
 
@@ -3976,7 +4087,7 @@ figcaption {
     margin-right: 20px;
   }
 
-  .navigation {
+  .header {
     padding-right: 20px;
     padding-left: 20px;
   }
@@ -4078,17 +4189,17 @@ figcaption {
     object-fit: fill;
   }
 
-  .div-block {
+  .object-informations-container {
     -o-object-fit: fill;
     object-fit: fill;
   }
 
-  .div-block-2 {
+  .bodycontainer {
     -o-object-fit: fill;
     object-fit: fill;
   }
 
-  .ar-object {
+  .ar-object-google-ar-button {
     display: block;
     margin-right: auto;
     margin-left: auto;
@@ -4100,12 +4211,12 @@ figcaption {
     display: block;
   }
 
-  .text-block {
+  .object-name {
     display: block;
     text-align: center;
   }
 
-  .text-block-2 {
+  .description {
     display: block;
     text-align: center;
   }
@@ -4120,6 +4231,10 @@ figcaption {
 
   .image {
     width: 125px;
+  }
+
+  .googlemodelviewer {
+    margin-top: 40px;
   }
 }
 

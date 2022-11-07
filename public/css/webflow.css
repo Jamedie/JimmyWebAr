@@ -48,11 +48,11 @@ html {
 body {
   margin: 0;
   min-height: 100%;
-  background-color: rgb(0, 0, 0);
+  background-color: #fff;
   font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
-  color: rgb(214, 214, 214);
+  color: #333;
 }
 img {
   max-width: 100%;
@@ -87,7 +87,7 @@ html.w-mod-touch * {
 .w-button {
   display: inline-block;
   padding: 9px 15px;
-  background-color: #2167cf;
+  background-color: #3898EC;
   color: white;
   border: 0;
   line-height: inherit;
@@ -172,7 +172,7 @@ html[data-w-dynpage] [data-w-cloak] {
   right: 12px !important;
   bottom: 12px !important;
   left: auto !important;
-  color: #fefeff !important;
+  color: #AAADB0 !important;
   background-color: #fff !important;
   border-radius: 3px !important;
   padding: 6px 8px 6px 6px !important;
@@ -241,7 +241,7 @@ p {
 blockquote {
   margin: 0 0 10px 0;
   padding: 10px 20px;
-  border-left: 5px solid #252525;
+  border-left: 5px solid #E2E2E2;
   font-size: 18px;
   line-height: 22px;
 }
@@ -309,13 +309,13 @@ button,
   display: none;
   padding: 20px;
   text-align: center;
-  background-color: #2b2a2a;
+  background-color: #dddddd;
 }
 .w-form-fail {
   display: none;
   margin-top: 10px;
   padding: 10px;
-  background-color: #242222;
+  background-color: #ffdede;
 }
 label {
   display: block;
@@ -1601,7 +1601,7 @@ textarea.w-select {
 }
 .w-nav {
   position: relative;
-  background: #000000;
+  background: #dddddd;
   z-index: 1000;
 }
 .w-nav:before,
