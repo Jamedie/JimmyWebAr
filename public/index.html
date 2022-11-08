@@ -62,7 +62,7 @@
     <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <link href="images/webclip.png" rel="apple-touch-icon" />
   </head>
-  <body background-color="rgb(0, 0, 0)" class="body">
+  <body class="body">
     <div
       data-collapse="medium"
       data-animation="default"
@@ -72,7 +72,7 @@
       role="banner"
       class="header w-nav"
     >
-      <img src="images\logo-wonder.svg" loading="lazy" width="47" alt="" />
+      <img src="images\logo-wonder.svg" width="47" alt="" />
       <h1 class="heading">Jimmy<br />Web AR Test</h1>
     </div>
     <div class="bodycontainer">
@@ -136,43 +136,74 @@
             </iframe>
           </div>
         </div>
-        <div class="object-informations-container">
-          <!-- Default stylesheet (optional) -->
-          <link
-            rel="stylesheet"
-            href="https://unpkg.com/@wonder-partners/ar-button/styles.css"
-          />
+      </div>
+    </div>
+    <div class="object-informations-container">
+      <!-- Default stylesheet (optional) -->
+      <link
+        rel="stylesheet"
+        href="https://unpkg.com/@wonder-partners/ar-button/styles.css"
+      />
+      <!-- Use it like any other HTML element -->
+      <ar-button
+        src="https://firebasestorage.googleapis.com/v0/b/jimmy-webar.appspot.com/o/RockingChair.glb?alt=media"
+        ios-src="https://firebasestorage.googleapis.com/v0/b/jimmy-webar.appspot.com/o/RockingChair.usdz?alt=media"
+        title="Rocking chair"
+        link="https://www.wonder-partners.com/"
+        checkout-title="Rocking chair"
+        checkout-subtitle="Furniture"
+        price="Pas cher"
+      >
+        View in your space
+      </ar-button>
 
-          <!-- Use it like any other HTML element -->
-          <ar-button
-            src="https://firebasestorage.googleapis.com/v0/b/jimmy-webar.appspot.com/o/RockingChair.glb?alt=media"
-            ios-src="https://firebasestorage.googleapis.com/v0/b/jimmy-webar.appspot.com/o/RockingChair.usdz?alt=media"
-            title="Rocking chair"
-            link="https://www.wonder-partners.com/"
-            checkout-title="Rocking chair"
-            checkout-subtitle="Furniture"
-            price="Pas cher"
+      <div class="object-name">Rocking chair</div>
+      <div class="description">Furniture</div>
+      <div class="divider"></div>
+    </div>
+    <div class="ar-object-google-ar-button">
+      <div class="experience-type-name">userAgent AR Button</div>
+      <div class="arcontainer w-container">
+        <script type="text/javascript">
+          window.onload = function () {
+            var iOS =
+              /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+
+            var android = /android/i.test(navigator.userAgent);
+
+            if (iOS) {
+              document.getElementById("ar-ios").hidden = false;
+              document.getElementById("ar-android").hidden = true;
+            }
+            if (android) {
+              document.getElementById("ar-ios").hidden = true;
+              document.getElementById("ar-android").hidden = false;
+            }
+          };
+        </script>
+        <div class="addmodelviewerhere"></div>
+        <div id="ar-android" class="ar-android">
+          <a
+            rel="ar"
+            href="https://firebasestorage.googleapis.com/v0/b/jimmy-webar.appspot.com/o/jimmy_ninja.glb?alt=media&link=https://www.instagram.com/jimmy_droitier_dereze/&title=Tiger#Intent;scheme=https;package=com.google.ar.core;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;"
           >
-            View in your space
-          </ar-button>
+            <img src="images\Ninja.png"
+          /></a>
+        </div>
 
-          <div class="object-name">Rocking chair</div>
-          <div class="description">Furniture</div>
-          <div class="divider"></div>
+        <div id="ar-ios" class="ar-ios">
+          <a
+            rel="ar"
+            href="https://firebasestorage.googleapis.com/v0/b/jimmy-webar.appspot.com/o/Jimmy_Ninja.usdz?alt=media"
+          >
+            <img src="images\Ninja.png" />
+          </a>
         </div>
       </div>
-      <div class="ar-object-google-ar-button">
-        <div>
-          <div class="experience-type-name">Google AR Button</div>
-        </div>
-        <div class="arcontainer w-container">
-          <div class="addmodelviewerhere"></div>
-        </div>
-        <div class="object-informations-container">
-          <div class="object-name">Ninja</div>
-          <div class="description">Character</div>
-          <div class="divider"></div>
-        </div>
+      <div class="object-informations-container">
+        <div class="object-name">Ninja</div>
+        <div class="description">Character</div>
+        <div class="divider"></div>
       </div>
     </div>
     <script
