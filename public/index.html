@@ -1,10 +1,4 @@
 <!DOCTYPE html>
-<!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Mon Nov 07 2022 13:11:18 GMT+0000 (Coordinated Universal Time)  -->
-<html
-  data-wf-page="6364e8648f1d89105e854eee"
-  data-wf-site="6364e8648f1d89404b854eda"
->
   <head>
     <!-- Load Model Viewer -->
     <script
@@ -153,6 +147,7 @@
         checkout-title="Rocking chair"
         checkout-subtitle="Furniture"
         price="Pas cher"
+        call-to-action="Ajouter au panier"
       >
         View in your space
       </ar-button>
@@ -161,7 +156,7 @@
       <div class="description">Furniture</div>
       <div class="divider"></div>
     </div>
-    <div class="ar-object-google-ar-button">
+    <div  id="ar-object-google-ar-button" class="ar-object-google-ar-button">
       <div class="experience-type-name">userAgent AR Button</div>
       <div class="arcontainer w-container">
         <script type="text/javascript">
@@ -179,13 +174,16 @@
               document.getElementById("ar-ios").hidden = true;
               document.getElementById("ar-android").hidden = false;
             }
+            if(!iOS && !android)
+            {
+              document.getElementById("ar-object-google-ar-button").hidden = true;   
+            }
           };
         </script>
         <div class="addmodelviewerhere"></div>
         <div id="ar-android" class="ar-android">
           <a
-            rel="ar"
-            href="https://firebasestorage.googleapis.com/v0/b/jimmy-webar.appspot.com/o/jimmy_ninja.glb?alt=media&link=https://www.instagram.com/jimmy_droitier_dereze/&title=Tiger#Intent;scheme=https;package=com.google.ar.core;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;"
+            href="intent://arvr.google.com/scene-viewer/1.0?file=https://firebasestorage.googleapis.com/v0/b/jimmy-webar.appspot.com/o/jimmy_ninja.glb#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;"
           >
             <img src="images\Ninja.png"
           /></a>
