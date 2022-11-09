@@ -7,14 +7,14 @@
   </head>
   <body>
     <a-scene
-      mindar-image="imageTargetSrc: targets.mind;"
+      mindar-image="imageTargetSrc: Voiture.mind;"
       color-space="sRGB"
       renderer="colorManagement: true, physicallyCorrectLights"
       vr-mode-ui="enabled: false"
       device-orientation-permission-ui="enabled: false"
     >
-      <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
-      <a-assets>
+      <!-- <a-camera position="0 0 0" look-controls="enabled: false"></a-camera> -->
+      <!-- <a-assets>
         <a-asset-item
           id="rockingchair"
           src="https://firebasestorage.googleapis.com/v0/b/jimmy-webar.appspot.com/o/RockingChair.glb?alt=media"
@@ -37,6 +37,42 @@
           scale="1 1 1"
           src="#rockingchair"
         ></a-gltf-model>
+      </a-entity> -->
+
+      <a-assets>
+        <video
+          id="myvideo"
+          src="https://firebasestorage.googleapis.com/v0/b/jimmy-webar.appspot.com/o/Voiture.mp4?alt=media"
+          type="video/mp4"
+          loop="true"
+          playsinline
+          autoplay="true"
+          controls="true"
+          muted
+          timeout="10000"
+        ></video>
+
+        <script>
+          document.getElementById("myvideo").play();
+        </script>
+      </a-assets>
+      <a-camera
+        position="0 0 0"
+        vr-mode-ui="enabled: false"
+        look-controls="enabled: false"
+      ></a-camera>
+      <a-entity
+        id="objectAR"
+        mindar-image-target="targetIndex: 0"
+        look-controls="enabled: false"
+      >
+        <a-plane
+          src="#myvideo"
+          position="0 0 0"
+          height="0.552"
+          width="1"
+          rotation="0 0 0"
+        ></a-plane>
       </a-entity>
     </a-scene>
   </body>
