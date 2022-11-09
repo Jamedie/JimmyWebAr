@@ -111,3 +111,10 @@ Connaitre la plateforme actuel (ios ou android)
             }
           };
         </script>
+
+Mind Ar
+il faut inttegré :
+
+<script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.5/dist/mindar-image.prod.js"></script>
+<script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.5/dist/mindar-image-aframe.prod.js"></script>
