@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
   <head>
     <!-- Load Model Viewer -->
     <script
@@ -11,6 +12,14 @@
       src="https://unpkg.com/@wonder-partners/ar-button"
       title="Chevrolet Corvette ZR"
     ></script>
+
+    <!-- Mind AR Import -->
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.5/dist/mindar-image.prod.js"></script>
+      <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.5/dist/mindar-image-aframe.prod.js"></script>
+    </head>
 
     <meta charset="utf-8" />
     <title>Jimmy Web AR Test</title>
@@ -112,104 +121,110 @@
           <div class="experience-type-name">Wonder AR Button + Iframe</div>
         </div>
         <div class="arcontainer w-container">
-          <div class="addmodelviewerhere"></div>
-          <div class="sketchfab-embed-wrapper">
-            <iframe
-              title="RockingChair"
-              frameborder="0"
-              allowfullscreen
-              mozallowfullscreen="true"
-              webkitallowfullscreen="true"
-              allow="autoplay; fullscreen; xr-spatial-tracking"
-              xr-spatial-tracking
-              execution-while-out-of-viewport
-              execution-while-not-rendered
-              web-share
-              src="https://sketchfab.com/models/c1142b8022494c66b63fd4c469a4bf90/embed"
-            >
-            </iframe>
+          <div class="addmodelviewerhere">
+            <div class="sketchfab-embed-wrapper">
+              <iframe
+                margin-left:
+                auto;margin-right:
+                auto;
+                src="https://sketchfab.com/models/c1142b8022494c66b63fd4c469a4bf90/embed"
+                title="RockingChair"
+                frameborder="0"
+                allowfullscreen
+                mozallowfullscreen="true"
+                webkitallowfullscreen="true"
+                allow="autoplay; fullscreen; xr-spatial-tracking"
+                xr-spatial-tracking
+                execution-while-out-of-viewport
+                execution-while-not-rendered
+                web-share
+              >
+              </iframe>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="object-informations-container">
-      <!-- Default stylesheet (optional) -->
-      <link
-        rel="stylesheet"
-        href="https://unpkg.com/@wonder-partners/ar-button/styles.css"
-      />
-      <!-- Use it like any other HTML element -->
-      <ar-button
-        src="https://firebasestorage.googleapis.com/v0/b/jimmy-webar.appspot.com/o/RockingChair.glb?alt=media"
-        ios-src="https://firebasestorage.googleapis.com/v0/b/jimmy-webar.appspot.com/o/RockingChair.usdz?alt=media"
-        title="Rocking chair"
-        link="https://www.wonder-partners.com/"
-        checkout-title="Rocking chair"
-        checkout-subtitle="Furniture"
-        price="Pas cher"
-        call-to-action="Ajouter au panier"
-      >
-        View in your space
-      </ar-button>
-
-      <div class="object-name">Rocking chair</div>
-      <div class="description">Furniture</div>
-      <div class="divider"></div>
-    </div>
-    <div  id="ar-object-google-ar-button" class="ar-object-google-ar-button">
-      <div class="experience-type-name">userAgent AR Button</div>
-      <div class="arcontainer w-container">
-        <script type="text/javascript">
-          window.onload = function () {
-            var iOS =
-              /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-
-            var android = /android/i.test(navigator.userAgent);
-
-            if (iOS) {
-              document.getElementById("ar-ios").hidden = false;
-              document.getElementById("ar-android").hidden = true;
-            }
-            if (android) {
-              document.getElementById("ar-ios").hidden = true;
-              document.getElementById("ar-android").hidden = false;
-            }
-            if(!iOS && !android)
-            {
-              document.getElementById("ar-object-google-ar-button").hidden = true;   
-            }
-          };
-        </script>
-        <div class="addmodelviewerhere"></div>
-        <div id="ar-android" class="ar-android">
-          <a
-            href="intent://arvr.google.com/scene-viewer/1.0?file=https://firebasestorage.googleapis.com/v0/b/jimmy-webar.appspot.com/o/jimmy_ninja.glb#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;"
-          >
-            <img src="images\Ninja.png"
-          /></a>
-        </div>
-
-        <div id="ar-ios" class="ar-ios">
-          <a
-            rel="ar"
-            href="https://firebasestorage.googleapis.com/v0/b/jimmy-webar.appspot.com/o/Jimmy_Ninja.usdz?alt=media"
-          >
-            <img src="images\Ninja.png" />
-          </a>
-        </div>
-      </div>
       <div class="object-informations-container">
-        <div class="object-name">Ninja</div>
-        <div class="description">Character</div>
+        <!-- Default stylesheet (optional) -->
+        <link
+          rel="stylesheet"
+          href="https://unpkg.com/@wonder-partners/ar-button/styles.css"
+        />
+        <!-- Use it like any other HTML element -->
+        <ar-button
+          src="https://firebasestorage.googleapis.com/v0/b/jimmy-webar.appspot.com/o/RockingChair.glb?alt=media"
+          ios-src="https://firebasestorage.googleapis.com/v0/b/jimmy-webar.appspot.com/o/RockingChair.usdz?alt=media"
+          title="Rocking chair"
+          link="https://www.wonder-partners.com/"
+          checkout-title="Rocking chair"
+          checkout-subtitle="Furniture"
+          price="Pas cher"
+          call-to-action="Ajouter au panier"
+        >
+          View in your space
+        </ar-button>
+
+        <div class="object-name">Rocking chair</div>
+        <div class="description">Furniture</div>
         <div class="divider"></div>
       </div>
+      <div id="ar-object-google-ar-button" class="ar-object-google-ar-button">
+        <div class="experience-type-name">userAgent AR Button</div>
+        <div class="arcontainer w-container">
+          <script type="text/javascript">
+            window.onload = function () {
+              var iOS =
+                /iPad|iPhone|iPod/.test(navigator.userAgent) &&
+                !window.MSStream;
+
+              var android = /android/i.test(navigator.userAgent);
+
+              if (iOS) {
+                document.getElementById("ar-ios").hidden = false;
+                document.getElementById("ar-android").hidden = true;
+              }
+              if (android) {
+                document.getElementById("ar-ios").hidden = true;
+                document.getElementById("ar-android").hidden = false;
+              }
+              if (!iOS && !android) {
+                document.getElementById(
+                  "ar-object-google-ar-button"
+                ).hidden = true;
+              }
+            };
+          </script>
+          <div class="addmodelviewerhere">
+            <div id="ar-android" class="ar-android">
+              <a
+                href="intent://arvr.google.com/scene-viewer/1.0?file=https://firebasestorage.googleapis.com/v0/b/jimmy-webar.appspot.com/o/jimmy_ninja.glb#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;"
+              >
+                <img src="images\Ninja.png"
+              /></a>
+            </div>
+            <div id="ar-ios" class="ar-ios">
+              <a
+                rel="ar"
+                href="https://firebasestorage.googleapis.com/v0/b/jimmy-webar.appspot.com/o/Jimmy_Ninja.usdz?alt=media"
+              >
+                <img src="images\Ninja.png" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="object-informations-container">
+          <div class="object-name">Ninja</div>
+          <div class="description">Character</div>
+          <div class="divider"></div>
+        </div>
+      </div>
+      <script
+        src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6364e8648f1d89404b854eda"
+        type="text/javascript"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous"
+      ></script>
     </div>
-    <script
-      src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6364e8648f1d89404b854eda"
-      type="text/javascript"
-      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-      crossorigin="anonymous"
-    ></script>
     <script src="js/webflow.js" type="text/javascript"></script>
     <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
   </body>
